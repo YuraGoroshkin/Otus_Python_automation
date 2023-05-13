@@ -1,6 +1,18 @@
 from src.triangle import Triangle
+from random import randrange
 
 
 def test_triangle():
-    triangle = Triangle(a=10, b=10, c=10)
-    print(triangle.triangle_area())
+    a = randrange(10)
+    b = randrange(10)
+    c = randrange(10)
+    triangle = Triangle(a, b, c)
+    triangle.triangle_area()
+    result = Triangle.area
+    assert result == area(a, b, c)
+
+
+def area(a, b, c):
+    p = (a + b + c) / 2  # расчет полупериметра для формулы Герона
+    s = (p * (p - a) * (p - b) * (p - c)) ** 0.5  # расчет площади по формуле Герона
+    return s

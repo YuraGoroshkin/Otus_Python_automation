@@ -8,7 +8,7 @@ class Circle(Figure):
 
     def circle_area(self):
         pi = 3.14
-        Circle.area = pi * (self.a**2)
+        Circle.area = pi * (self.a ** 2)
         return Circle.area
 
     def circle_perimeter(self):
