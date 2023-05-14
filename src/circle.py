@@ -7,11 +7,13 @@ class Circle(Figure):
         self.a = a
 
     def circle_area(self):
+        Circle.error(self)
         pi = 3.14
         Circle.area = pi * (self.a ** 2)
         return Circle.area
 
     def circle_perimeter(self):
+        Circle.error(self)
         pi = 3.14
         Circle.perimeter = (pi * self.a) * 2
         return Circle.perimeter
@@ -19,3 +21,7 @@ class Circle(Figure):
     @staticmethod
     def add_area(value):
         return Circle.area + value
+
+    def error(self):
+        if self.a <= 0:
+            raise ValueError('ValueError')
