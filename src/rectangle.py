@@ -6,20 +6,16 @@ class Rectangle(Figure):
         super().__init__()
         self.a = a
         self.b = b
+        self.name = 'Rectangle'
+        Rectangle.error(self)
 
     def rectangle_area(self):
-        Rectangle.error(self)
-        Rectangle.area = self.a * self.b
-        return Rectangle.area
+        self.area = self.a * self.b
+        return self.area
 
     def rectangle_perimeter(self):
-        Rectangle.error(self)
-        Rectangle.perimeter = (self.a + self.b) * 2
-        return Rectangle.perimeter
-
-    @staticmethod
-    def add_area(value):
-        return Rectangle.area + value
+        self.perimeter = (self.a + self.b) * 2
+        return self.perimeter
 
     def error(self):
         if self.a <= 0:

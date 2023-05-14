@@ -6,8 +6,8 @@ def test_сircle():
     a = randrange(100)
     сircle = Circle(a)
     сircle.circle_area()
-    result = Circle.area
-    assert result == area(a)
+    assert сircle.area == area(a)
+    assert сircle.name == 'Circle'
 
 
 def area(a):

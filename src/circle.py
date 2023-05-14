@@ -5,22 +5,18 @@ class Circle(Figure):
     def __init__(self, a: int):
         super().__init__()
         self.a = a
+        self.name = 'Circle'
+        Circle.error(self)
 
     def circle_area(self):
-        Circle.error(self)
         pi = 3.14
-        Circle.area = pi * (self.a ** 2)
-        return Circle.area
+        self.area = pi * (self.a ** 2)
+        return self.area
 
     def circle_perimeter(self):
-        Circle.error(self)
         pi = 3.14
-        Circle.perimeter = (pi * self.a) * 2
-        return Circle.perimeter
-
-    @staticmethod
-    def add_area(value):
-        return Circle.area + value
+        self.perimeter = (pi * self.a) * 2
+        return self.perimeter
 
     def error(self):
         if self.a <= 0:

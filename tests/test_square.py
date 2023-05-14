@@ -6,7 +6,8 @@ def test_square():
     a = randrange(100)
     square = Square(a)
     square.square_area()
-    assert area(a) == Square.area
+    assert area(a) == square.area
+    assert square.name == 'Square'
 
 
 def area(a):

@@ -8,8 +8,8 @@ def test_triangle():
     c = randrange(10)
     triangle = Triangle(a, b, c)
     triangle.triangle_area()
-    result = Triangle.area
-    assert result == area(a, b, c)
+    assert triangle.area == area(a, b, c)
+    assert triangle.name == 'Triangle'
 
 
 def area(a, b, c):

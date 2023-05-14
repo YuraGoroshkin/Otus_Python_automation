@@ -5,20 +5,16 @@ class Square(Figure):
     def __init__(self, a: int):
         super().__init__()
         self.a = a
+        self.name = 'Square'
+        Square.error(self)
 
     def square_area(self):
-        Square.error(self)
-        Square.area = self.a * 2
-        return Square.area
+        self.area = self.a * 2
+        return self.area
 
     def square_perimeter(self):
-        Square.error(self)
-        Square.perimeter = self.a * 4
-        return Square.perimeter
-
-    @staticmethod
-    def add_area(value):
-        return Square.area + value
+        self.perimeter = self.a * 4
+        return self.perimeter
 
     def error(self):
         if self.a <= 0:

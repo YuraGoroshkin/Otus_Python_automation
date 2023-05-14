@@ -7,8 +7,8 @@ def test_rectangle():
     b = randrange(10)
     rectangle = Rectangle(a, b)
     rectangle.rectangle_area()
-    result = Rectangle.area
-    assert result == area(a, b)
+    assert rectangle.area == area(a, b)
+    assert rectangle.name == 'Rectangle'
 
 
 def area(a, b):
