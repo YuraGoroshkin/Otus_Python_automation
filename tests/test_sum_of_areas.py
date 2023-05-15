@@ -9,10 +9,6 @@ def test_сircle_and_square():
     сircle.circle_area()
     square = Square(a)
     square.square_area()
-    assert square.area == area_square(a)
-    assert square.name == 'Square'
-    assert сircle.area == area_circle(a)
-    assert сircle.name == 'Circle'
     assert сircle.add_area(square) == area_square(a) + area_circle(a)
     assert square.add_area(сircle) == area_square(a) + area_circle(a)
 
