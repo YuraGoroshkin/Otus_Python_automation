@@ -8,15 +8,15 @@ class Circle(Figure):
         self.name = 'Circle'
         Circle.error(self)
 
+    @property
     def circle_area(self):
         pi = 3.14
-        self.area = pi * (self.a ** 2)
-        return self.area
+        return pi * (self.a ** 2)
 
+    @property
     def circle_perimeter(self):
         pi = 3.14
-        self.perimeter = (pi * self.a) * 2
-        return self.perimeter
+        return (pi * self.a) * 2
 
     def error(self):
         if self.a <= 0:

@@ -8,13 +8,13 @@ class Square(Figure):
         self.name = 'Square'
         Square.error(self)
 
+    @property
     def square_area(self):
-        self.area = self.a * 2
-        return self.area
+        return self.a * 2
 
+    @property
     def square_perimeter(self):
-        self.perimeter = self.a * 4
-        return self.perimeter
+        return self.a * 4
 
     def error(self):
         if self.a <= 0:

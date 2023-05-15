@@ -5,8 +5,7 @@ from random import randrange
 def test_square():
     a = randrange(100)
     square = Square(a)
-    square.square_area()
-    assert area(a) == square.area
+    assert area(a) == square.square_area
     assert square.name == 'Square'
 
 

@@ -5,8 +5,7 @@ from src.circle import Circle
 def test_сircle():
     a = randrange(100)
     сircle = Circle(a)
-    сircle.circle_area()
-    assert сircle.area == area(a)
+    assert сircle.circle_area == area(a)
     assert сircle.name == 'Circle'
 
 

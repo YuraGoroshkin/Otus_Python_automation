@@ -9,13 +9,13 @@ class Rectangle(Figure):
         self.name = 'Rectangle'
         Rectangle.error(self)
 
+    @property
     def rectangle_area(self):
-        self.area = self.a * self.b
-        return self.area
+        return self.a * self.b
 
+    @property
     def rectangle_perimeter(self):
-        self.perimeter = (self.a + self.b) * 2
-        return self.perimeter
+        return (self.a + self.b) * 2
 
     def error(self):
         if self.a <= 0:

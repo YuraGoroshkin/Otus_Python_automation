@@ -7,8 +7,7 @@ def test_triangle():
     b = randrange(10)
     c = randrange(10)
     triangle = Triangle(a, b, c)
-    triangle.triangle_area()
-    assert triangle.area == area(a, b, c)
+    assert triangle.triangle_area == area(a, b, c)
     assert triangle.name == 'Triangle'
 
 

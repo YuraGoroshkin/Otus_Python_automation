@@ -17,11 +17,3 @@ class Figure:
     @property
     def area(self) -> int:
         return self._area
-
-    @area.setter
-    def area(self, value):
-        self._area = value
-
-    @perimeter.setter
-    def perimeter(self, value):
-        self._perimeter = value
