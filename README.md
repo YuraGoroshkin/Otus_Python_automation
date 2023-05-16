@@ -4,3 +4,5 @@
 
 
 <img src="https://img.freepik.com/premium-photo/kitty_410516-15306.jpg" alt="коте">
+<!---Пример кода-->
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Computer+science+student)](https://git.io/typing-svg)
