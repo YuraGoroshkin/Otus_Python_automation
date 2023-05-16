@@ -19,8 +19,8 @@ class Rectangle(Figure):
 
     def error(self):
         if self.a <= 0:
-            raise ValueError('ValueError')
+            raise ValueError(f'Side a must be greater than 0, got {self.a}')
         if self.b <= 0:
-            raise ValueError('ValueError')
+            raise ValueError(f'Side a must be greater than 0, got {self.b}')
         if self.a == self.b:
-            raise ValueError('ValueError')
+            raise ValueError(f"Sides don't have to be equal {self.a} != {self.b}")

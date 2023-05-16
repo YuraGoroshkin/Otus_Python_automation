@@ -18,4 +18,4 @@ class Square(Figure):
 
     def error(self):
         if self.a <= 0:
-            raise ValueError('ValueError')
+            raise ValueError(f'Side a must be greater than 0, got {self.a}')
