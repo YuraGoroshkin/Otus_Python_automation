@@ -9,11 +9,11 @@ class Square(Figure):
         Square.error(self)
 
     @property
-    def square_area(self):
+    def area(self):
         return self.a * 2
 
     @property
-    def square_perimeter(self):
+    def perimeter(self):
         return self.a * 4
 
     def error(self):

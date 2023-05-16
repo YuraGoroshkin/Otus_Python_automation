@@ -6,14 +6,14 @@ import pytest
 def test_сircle_area():
     a = randrange(100)
     сircle = Circle(a)
-    assert сircle.circle_area == area(a)
+    assert сircle.area == area(a)
     assert сircle.name == 'Circle'
 
 
 def test_сircle_perimetr():
     a = randrange(100)
     сircle = Circle(a)
-    сircle.circle_perimeter()
+    сircle.perimeter
     assert сircle.perimeter == perimetr(a)
     assert сircle.name == 'Circle'
 

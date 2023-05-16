@@ -12,12 +12,12 @@ class Triangle(Figure):
         Triangle.error(self)
 
     @property
-    def triangle_area(self):
-        p = self.triangle_perimeter / 2  # расчет полупериметра для формулы Герона
+    def area(self):
+        p = self.perimeter / 2  # расчет полупериметра для формулы Герона
         return (p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5  # расчет площади по формуле Герона
 
     @property
-    def triangle_perimeter(self):
+    def perimeter(self):
         return self.a + self.b + self.c
 
     def error(self):

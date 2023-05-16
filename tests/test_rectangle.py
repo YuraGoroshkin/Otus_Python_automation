@@ -7,7 +7,7 @@ def test_rectangle_area():
     a = randrange(10)
     b = randrange(10)
     rectangle = Rectangle(a, b)
-    assert rectangle.rectangle_area == area(a, b)
+    assert rectangle.area == area(a, b)
     assert rectangle.name == 'Rectangle'
 
 
@@ -15,7 +15,7 @@ def test_rectangle_perimetr():
     a = randrange(10)
     b = randrange(10)
     rectangle = Rectangle(a, b)
-    rectangle.rectangle_perimeter()
+    rectangle.perimeter
     assert rectangle.perimeter == perimetr(a, b)
     assert rectangle.name == 'Rectangle'
 

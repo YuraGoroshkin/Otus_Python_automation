@@ -10,11 +10,11 @@ class Rectangle(Figure):
         Rectangle.error(self)
 
     @property
-    def rectangle_area(self):
+    def area(self):
         return self.a * self.b
 
     @property
-    def rectangle_perimeter(self):
+    def perimeter(self):
         return (self.a + self.b) * 2
 
     def error(self):

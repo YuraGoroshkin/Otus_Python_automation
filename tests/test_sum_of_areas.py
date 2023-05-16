@@ -6,9 +6,9 @@ from src.square import Square
 def test_сircle_and_square():
     a = randrange(100)
     сircle = Circle(a)
-    сircle.circle_area()
+    сircle.area
     square = Square(a)
-    square.square_area()
+    square.area
     assert сircle.add_area(square) == area_square(a) + area_circle(a)
     assert square.add_area(сircle) == area_square(a) + area_circle(a)
 

@@ -9,12 +9,12 @@ class Circle(Figure):
         Circle.error(self)
 
     @property
-    def circle_area(self):
+    def area(self):
         pi = 3.14
         return pi * (self.a ** 2)
 
     @property
-    def circle_perimeter(self):
+    def perimeter(self):
         pi = 3.14
         return (pi * self.a) * 2
 

@@ -8,7 +8,7 @@ def test_triangle_area():
     b = randrange(10)
     c = randrange(10)
     triangle = Triangle(a, b, c)
-    assert triangle.triangle_area == area(a, b, c)
+    assert triangle.area == area(a, b, c)
     assert triangle.name == 'Triangle'
 
 
@@ -17,7 +17,7 @@ def test_triangle_perimetr():
     b = randrange(10)
     c = randrange(10)
     triangle = Triangle(a, b, c)
-    triangle.triangle_perimeter()
+    triangle.perimeter
     assert triangle.perimeter == perimetr(a, b, c)
     assert triangle.name == 'Triangle'
 
