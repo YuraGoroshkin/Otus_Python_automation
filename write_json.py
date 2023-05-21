@@ -7,25 +7,20 @@ from readers.reader_csv import ReaderCSV
 number = math.ceil(ReaderCSV().number_of_books() / ReaderJSON().number_of_user())
 
 books = ReaderCSV.books
-# parts_book = lambda books, n=number: [books[i:i + n] for i in range(0, len(books), n)]
-# parts_book(books)
-# print(parts_book(books))
-# print(number)
 
 
 parts_book = (books[i:i + number] for i in range(0, len(books), number))
-
-c = list(parts_book)[0]
-
-data = [
-    {
-        "name": ReaderJSON.user['name'],
-        "gender": ReaderJSON.user['gender'],
-        "address": ReaderJSON.user['address'],
-        "age": ReaderJSON.user['age'],
-        "books": c
-    },
-]
+f = ReaderJSON().number_of_user()
+c = list(parts_book)[2]
+data = []
+name = ReaderJSON.u
+i = 0
+for element in name:
+    if i < f:
+        # c = list(parts_book)[i]
+        element['books'] = c
+        data.append(element)
+        i = i+1
 
 with open("result.json", "w") as f:
     s = json.dumps(data, indent=4)

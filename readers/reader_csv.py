@@ -9,7 +9,7 @@ class ReaderCSV:
         books = []
         # Итерируемся по данным делая из них словари
         for row in reader:
-            books.append(row)
+            books.append({'Title':row['Title'], 'Author':row['Author'], 'Pages':row['Pages'], 'Genre':row['Genre']})
 
     def number_of_books(self):
         return len(self.books)

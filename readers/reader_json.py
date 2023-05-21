@@ -7,9 +7,10 @@ class ReaderJSON:
         users = json.loads(f.read())
         u = []
         for user in users:
-            u.append(user)
+            u.append({'name':user['name'], 'gender':user['gender'], 'address':user['address'], 'age':user['age'], 'books':None})
 
     # print(len(u))
+    # print(u)
     # print(u[27]['name'])
 
     def number_of_user(self):
