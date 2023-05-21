@@ -1,27 +1,19 @@
-import math
 import json
 from readers.reader_json import ReaderJSON
 from readers.reader_csv import ReaderCSV
 
-# n нужно получать от деления длины найденныйх книг с длинны найденных пользователей
-number = math.ceil(ReaderCSV().number_of_books() / ReaderJSON().number_of_user())
-
 books = ReaderCSV.books
+users = ReaderJSON.u
+user_index = 0
 
+for book in books:
+    user = users[user_index]
+    user['books'].append(book)
 
-parts_book = (books[i:i + number] for i in range(0, len(books), number))
-f = ReaderJSON().number_of_user()
-c = list(parts_book)[2]
-data = []
-name = ReaderJSON.u
-i = 0
-for element in name:
-    if i < f:
-        # c = list(parts_book)[i]
-        element['books'] = c
-        data.append(element)
-        i = i+1
+    user_index += 1
+    if user_index >= len(users):
+        user_index = 0
 
 with open("result.json", "w") as f:
-    s = json.dumps(data, indent=4)
+    s = json.dumps(users, indent=4)
     f.write(s)
