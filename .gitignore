@@ -160,3 +160,5 @@ cython_debug/
 .idea/
 calculations.py
 first.py
+/files/books.csv
+/files/users.json
